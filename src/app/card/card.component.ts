@@ -20,7 +20,7 @@ export class CardComponent {
     photo : 'https://diwaindustries.tg/wp-content/uploads/2022/10/pngtree-business-male-icon-vector-png-image_916468.jpg'
   };
 
-  ageVisible = true;
+  ageVisible: boolean = true;
 
   toggleAgeVisibility(): void {
     this.ageVisible = !this.ageVisible;
@@ -28,6 +28,6 @@ export class CardComponent {
 
 
   sayHello(): void {
-    alert("👁️‍🗨️I see you👁️‍🗨️");
+    alert("👁️‍🗨️curieux·se👁️‍🗨️");
   }
  }
