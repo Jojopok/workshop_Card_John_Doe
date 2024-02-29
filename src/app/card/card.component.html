@@ -1,0 +1,10 @@
+<article class="containerCard">
+    <img [src]="user.photo" alt="Photo de l'utilisateur">
+    <div class="bodyCard">
+    <h1>Hello {{user.firstName}}</h1>
+    <p [hidden]= "ageVisible">Age : {{user.age}} ans</p>
+    <p> Citation : {{user.quote}}</p>
+    <input type="text" [(ngModel)]="user.quote">
+    <button (click)="toggleAgeVisibility(); sayHello()">Voir l'âge</button>
+    </div>
+    </article>
